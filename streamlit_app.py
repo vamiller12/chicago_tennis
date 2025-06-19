@@ -1208,8 +1208,8 @@ for loc in filtered:
         remaining = sunset - now
         hours, remainder = divmod(remaining.total_seconds(), 3600)
         minutes = remainder // 60
-        st.write(f"Sunset at: {sunset.strftime('%I:%M %p')}")
-        st.write(f"Daylight remaining: {int(hours)}h {int(minutes)}m")
+        st.write(f"🌅 Sunset at: {sunset.strftime('%I:%M %p')}")
+        st.write(f"🌞 Daylight remaining: {int(hours)}h {int(minutes)}m")
     else:
         st.write(f"Sun has already set at: {sunset.strftime('%I:%M %p')}")
     st.write("---")
