@@ -9,8 +9,7 @@ from astral.sun import sun
 from astral import LocationInfo
 
 
-# Hardcoded location data
-locations = [
+from locations_data import locations
         {
             "name": "HAMILTON (ALEXANDER)",
             "latitude": 41.76304673,
@@ -1208,8 +1207,13 @@ for loc in filtered:
         remaining = sunset - now
         hours, remainder = divmod(remaining.total_seconds(), 3600)
         minutes = remainder // 60
+<<<<<<< HEAD
+        st.write(f"🌅 Sunset at: {sunset.strftime('%I:%M %p')}")
+        st.write(f"🌞 Daylight remaining: {int(hours)}h {int(minutes)}m")
+=======
         st.write(f"Sunset at: {sunset.strftime('%I:%M %p')}")
         st.write(f"Daylight remaining: {int(hours)}h {int(minutes)}m")
+>>>>>>> 38b288c (Refactor: Move location data to a separate file)
     else:
         st.write(f"Sun has already set at: {sunset.strftime('%I:%M %p')}")
     st.write("---")
