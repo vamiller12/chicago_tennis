@@ -1,6 +1,5 @@
 streamlit
 folium
-re
 streamlit_folium 
 datetime
 meteostat 
