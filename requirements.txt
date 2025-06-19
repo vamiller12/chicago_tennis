@@ -3,6 +3,5 @@ folium
 streamlit_folium 
 datetime
 meteostat 
-zoneinfo
 astral.sun
 astral
