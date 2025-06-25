@@ -7,10 +7,17 @@ from meteostat import Point, Hourly
 from zoneinfo import ZoneInfo
 from astral.sun import sun
 from astral import LocationInfo
+import os
 
 
-# Hardcoded location data
-
+# Load location data
+locations_file = os.path.join('data', 'locations.json')
+try:
+    with open(locations_file, 'r') as f:
+        locations = json.load(f)
+except FileNotFoundError:
+    st.error(f"Location file not found at {locations_file}")
+    locations = []
 
 
 # Streamlit app title
