@@ -8,6 +8,7 @@ from zoneinfo import ZoneInfo
 from astral.sun import sun
 from astral import LocationInfo
 import os
+import json
 
 
 # Load location data
